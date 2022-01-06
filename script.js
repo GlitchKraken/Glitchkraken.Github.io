@@ -5,6 +5,7 @@
 // YOUR NAMES: Josh Meek and Chad Fry
 
 // All the code below will be run once the page content finishes loading.
+/*
 document.addEventListener('DOMContentLoaded', function () {
    'use strict';
 
@@ -329,3 +330,4 @@ document.addEventListener('DOMContentLoaded', function () {
    }());
 
 }, false);
+*/
