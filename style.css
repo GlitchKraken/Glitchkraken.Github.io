@@ -11,6 +11,8 @@ html {
    box-sizing: border-box;
 }
 
+
+
 @font-face {
    font-family: gohu;
    src:url("gohufont-uni-14.ttf");
@@ -35,6 +37,8 @@ fieldset {
    border-width: 2px;
    float: left;
 }
+
+
 
 legend {
    border-color: rgb(68, 136, 204);
@@ -75,6 +79,19 @@ h1 {
 }
 
 
+h2 {
+   text-align: center;
+}
+
 h4 {
    text-align: center;
+}
+
+.ProfSelfie {
+   
+   border: 5px solid #ddd;
+   border-radius: 5%;
+   width: 10%;
+   height: auto;
+   padding: 5 px;
 }
