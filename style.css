@@ -17,12 +17,19 @@ html {
 }
 
 body {
-   background-color: rgb(255, 250, 245);
+   background-color: #0C0D10;
    font-family: Georgia, serif;
+   color: 	#9370DB;
 }
 
 h1 {
-   color: rgb(34, 68, 102);
+   color: #50327c;
+   text-align: center;
+   font-size: small;
+   white-space: normal;
+}
+
+h4 {
    text-align: center;
 }
 
