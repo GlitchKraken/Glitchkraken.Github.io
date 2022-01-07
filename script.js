@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
    // this seems to actually work! for whatever reason the console.log variant was unreliable...
 
    var titlePieces = document.querySelectorAll('.title');
-   var timer = 500;
+   var timer = 400;
    titlePieces.forEach((line) => {
       
       /*
