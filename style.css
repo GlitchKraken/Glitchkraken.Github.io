@@ -47,6 +47,7 @@ legend {
    padding: 0px 5px;
 }
 
+/*Stylize and color the big fill-in title*/
 h1 {
    color: #50327c;
    text-align: center;
@@ -68,7 +69,7 @@ h1 {
 }
 
 
-
+/*Stylize, color and center the navigation bar.*/
 .about_section > a {
    color: #fd7f20;
    text-align: center;
