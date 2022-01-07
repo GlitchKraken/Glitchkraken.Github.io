@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
    var titlePieces = document.querySelectorAll('.title');
    var timer = 400;
+
    titlePieces.forEach((line) => {
       
       /*
@@ -32,10 +33,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
    });
 
-   function timer() {
-      //alert("timer!");
-   }
-   
-   window.setInterval(timer, 1000);
+   //OK, so the title has been loaded by now... so why not wait a sec, then pop-in the rest? :D
+   window.setTimeout(function () {
+      document.querySelector('.about_section').style.display = '';
+   }, 1500);
 
 }, false);
