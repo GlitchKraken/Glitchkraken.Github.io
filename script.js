@@ -11,32 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
    (function () {
 
-      function PlayRetroAudio() {
-         var audio = new Audio('/sounds/retroHit.m4a');
-         audio.volume = 0.4;
-         audio.play();
-     }
-     
-     
-   
-    var links = document.querySelectorAll('.link');
-     
-     links.forEach(element => {
-        element.addEventListener('click', PlayRetroAudio());
-     });
-
-
-
-
-
-
-
-
-
-
-
-
-
+      
    }());
  
 }, false);

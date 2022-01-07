@@ -87,6 +87,12 @@ h4 {
    text-align: center;
 }
 
+
+.hiddenArrow {
+   display: none;
+}
+
+
 button {
    color: #fd7f20;
    text-align: center;
@@ -99,6 +105,18 @@ button {
 
 button:hover {
    transform: translateY(-10px);
+}
+
+
+
+/*What happens when a project blog is selected...*/
+.project {
+   color: #9370DB;
+   text-decoration: none;
+}
+
+.project:hover {
+   background-color: black;
 }
 
 .ProfSelfie {
