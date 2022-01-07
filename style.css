@@ -87,11 +87,25 @@ h4 {
    text-align: center;
 }
 
+button {
+   color: #fd7f20;
+   text-align: center;
+   text-decoration: none;
+   background-color: transparent;
+   border-color: transparent;
+   font-family: gohu;
+   font-size: medium;
+}
+
+button:hover {
+   transform: translateY(-10px);
+}
+
 .ProfSelfie {
    
    border: 5px solid #ddd;
    border-radius: 5%;
    width: 10%;
    height: auto;
-   padding: 5 px;
+   padding: 5px;
 }
