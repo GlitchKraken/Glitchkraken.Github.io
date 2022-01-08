@@ -125,9 +125,10 @@ button:hover {
 }
 
 .project:hover {
-   background-color: black;
+   background-color: blue;
 }
 
+/*fix the bar at the bottom of the screen*/
 hr {
    color: #9370DB;
    margin-top: 200px;
@@ -156,7 +157,7 @@ hr {
 .thanks {
    text-align: center;
 }
-
+/*Fix the bar to be at the bottom of the homepage screen.*/
 .homepagehr {
     position: fixed;
     left: 0;
