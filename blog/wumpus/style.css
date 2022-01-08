@@ -26,6 +26,8 @@ html {
 
 }
 
+body {overflow: scroll;}
+
 /* Stylize the units within the across2 class*/
 .across2 {
    display: flex;
