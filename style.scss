@@ -1,5 +1,4 @@
----
----
+
 
 @charset "UTF-8";
 
@@ -24,6 +23,7 @@ body {
    background-color: #0C0D10;
    /*font-family: Georgia, serif;*/
    font-family: gohu;
+   font-size: medium;
    color: 	#9370DB;
    overflow: scroll;
 }
@@ -86,6 +86,65 @@ h1 {
 }
 
 
+/*Specify Containers, and how flex should organize content within them.*/
+/*First used in the about page.*/
+/*Thanks to my friend Nickolas Gupton for having such good ideas on container management!*/
+
+.container {
+   display: flex;
+   flex-direction: column;
+   float: right;
+   padding: 10%;
+   width: 100%;
+   margin-left: 0px;
+   position: relative;
+   padding-bottom: 1%;
+
+   .row {
+      width:  100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+   
+   .col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+}
+
+
+/*Specify the boxes that go IN the container! their sizes will mostly be determined by the container class :)*/
+
+/*thanks again to https://css-tricks.com/notched-boxes/    and Nickolas Gupton!   https://nickolas.gupton.xyz/   */
+.displayBox {
+   position: relative;
+   width: 100%;
+   padding: 23px;
+   margin: 10px;
+   margin-bottom: 23px;
+   background-color: #2E1D48;
+   border-color: indigo;
+p {
+   padding-left: 10px;
+}
+
+   --notchSize: 40px;
+   clip-path: polygon(
+
+      0% var(--notchSize),
+      var(--notchSize) 0%,
+      0px 0%,
+      100% 0px,
+      100% calc(100% - var(--notchSize)),
+      calc(100% - var(--notchSize)) 100%,
+      0px 100%,
+      0% 0px
+   
+   );
+}
+
 
 
 .folder {
@@ -106,9 +165,7 @@ h4 {
 }
 
 
-.hiddenArrow {
-   display: none;
-}
+
 
 
 button {
@@ -146,7 +203,10 @@ hr {
 }
 
 .ProfSelfie {
-   
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 3%;
    border: 5px solid #ddd;
    border-radius: 5%;
    width: 10%;
@@ -219,7 +279,7 @@ hr {
 /* REGULAR SCANLINES SETTINGS */
 
     // width of 1 scanline (min.: 1px)
-    $scan-width: 2px;
+    $scan-width: 5px;
 
     // emulates a damage-your-eyes bad pre-2000 CRT screen ♥ (true, false)
     $scan-crt: true;

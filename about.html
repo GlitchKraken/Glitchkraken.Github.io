@@ -37,61 +37,82 @@ DON'T CHANGE THIS FILE
 </head>
 
 <!-- Creating a div that covers the whole web-page in scanlins. -->
-<div class="overlay scanlines">
+<div class="overlay scanlines" id="pageDiv">
 
   <body>
 
-    <h1>
-      <pre>
-  <img src="ProfSelfie.jpg" alt="itsa me!" class ="ProfSelfie">
-      </pre>
-    </h1>
-    <h2>
-      <pre> Hey, thanks for checking out my site! 
-   Right now, I'm working hard on a CyberSecurity M.S. from
-   Georgia Tech, and also on my Security+ certification- with 
-   these and my personal projects combined, I'm getting ready 
-   to tackle the role of CyberSecurity Engineer!
- </pre>
-    </h2>
 
-    <h2>
-      <pre> For the moment, the site is a little barren, but I hope to
-    fill it with tools, guides, and helpful links for other people
-    interested in learning how to hack!
-</pre>
-    </h2>
 
-    <h2>
-      <pre> If you're curious, check out my blog! you might just 
-    find something cool there too!
- </pre>
-    </h2>
+    <!-- The main container that will be used to organize the webpage.-->
+    <div class="container">
 
-    <div class="about_section">
 
-      <a href="index.html"><button>Home</button></a>
-      |
-      <a href="about.html"><button>~>[About]</button></a>
-      |
-      <a href="blog.html"><button>Blog</button></a>
-      |
-      <a href="https://github.com/GlitchKraken?tab=repositories" target="_blank"
-        rel="noopener noreferrer"><button>Github</button></a>
-      |
-      <a href="https://discord.com/users/117086477732675593" target="_blank"
-        rel="noopener noreferrer"><button>Discord</button></a>
+      
+     
+      <img src="ProfSelfie.jpg" alt="itsa me!" class ="ProfSelfie">
+    
+      
 
+      <div class="row"> 
+        <div class="displayBox">
+          <h2 class="folder">Chad_Fry @ sshl$: whoami</h2>
+            Hiya! I'm a huge tech enthusiast that started my journey into cybersecurity back in 2017, where I took my first ever programming class in C++ at Temple
+            Community College. Since then, I've learned so many more programming languages obtained a Bachelor's of Science in Computer Science from Angelo State University, Taught myself how to pentest, reverse
+            engineer, 
+        </div>
+      </div>
+
+
+      <!--Define the first row of the about page section!-->
+      <div class="row">
+        
+        <div class="displayBox">
+          <h2>Tech Skills:</h2>
+          margin is the space around an element's border, while padding is the space between an element's border and the element's content. Put another way, the margin property controls the space outside an element, and the padding property controls the space inside an eleme
+        </div>
+        
+        <div class="displayBox">
+          <h2>Programming Languages:</h2>
+          margin is the space around an element's border, while padding is the space between an element's border and the element's content. Put another way, the margin property controls the space outside an element, and the padding property controls the space inside an eleme
+        </div>
+      </div>
+      <!--END first row of the about page section!-->
+
+      
+
+
+
+      <div class="about_section">
+
+        <a href="index.html"><button>Home</button></a>
+        |
+        <a href="about.html"><button>~>[About]</button></a>
+        |
+        <a href="blog.html"><button>Blog</button></a>
+        |
+        <a href="https://github.com/GlitchKraken?tab=repositories" target="_blank"
+          rel="noopener noreferrer"><button>Github</button></a>
+        |
+        <a href="https://discord.com/users/117086477732675593" target="_blank"
+          rel="noopener noreferrer"><button>Discord</button></a>
+        |
+        <button onclick="var userPreferenceCookie = document.cookie; var userPreference = userPreferenceCookie.split('=')[1].split(';')[0]; if (userPreference === 'none') { document.cookie ='scanlinePreference=OFF;secure'; var PageOverlayClasses = document.getElementById('pageDiv').classList; if (PageOverlayClasses.contains('scanlines')) PageOverlayClasses.remove('scanlines'); } else { document.cookie ='scanlinePreference=none;secure'; var PageOverlayClasses = document.getElementById('pageDiv').classList; if (!PageOverlayClasses.contains('scanlines')) PageOverlayClasses.add('scanlines');}">[Toggle ScanLines]</button>
+
+      </div>
     </div>
+    <!--END The main container that will be used to organize the webpage.-->
 
 
-    <hr>
-    <!-- Import a JavaScript script to add interactivity to the page. -->
-    <div class="thanks">As thanks for making it this far, heres a picture of my cat, Hobbes (He's a very good boi)</div>
 
-    <div><img src="Hobbes.jpg" alt="Cutest kitten~" class="kitty"></div>
+
     <script src="script.js"></script>
 </div>
+<!-- END Scannlines Overlay div. -->
+
+
+
+<hr class="homepagehr">
+<div class="credits">Made By Chad Fry, aka GlitchKraken! 👾</div>
 </body>
 
 </html>

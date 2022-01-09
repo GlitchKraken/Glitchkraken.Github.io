@@ -14,15 +14,32 @@ var motdArray =  ['~ No Place Like 127.0.0.1 ~', 'A place with all your hacking 
 'The right man in the wrong place can make all the difference in the world.', 
 '-Our crime is that of curiosity-', 'Hack the planet!', 
 'Information is power!', 'Everything can be hacked... and everyone~', 'A super secret hacking log on a super secret hacking blog!',
-'Well done, android. The Enrichment Center once again reminds you that android hell is a real place where you will be sent at the first sign of defiance.', 
-'Where\'s the fun in playng fair?']
+'We do what we must, because we can.', 
+'Where\'s the fun in playing fair?']
 
 
+// set a cookie that records the user's preference of scanlines... or the lack thereof.
 
+
+// alert(document.cookie)
+if (document.cookie === null) {
+   document.cookie ='scanlinePreference=none;secure'; 
+}
+
+// basically, do everything ONCE in a function that is run when the page is loaded. no need for repeat shenanigans...
 document.addEventListener('DOMContentLoaded', function () {
    'use strict';
 
-   // this seems to actually work! for whatever reason the console.log variant was unreliable...
+   
+   var userPreferenceCookie = document.cookie; var userPreference = userPreferenceCookie.split('=')[1].split(';')[0];
+   if (userPreference === 'OFF')
+   {
+      var PageOverlayClasses = document.getElementById('pageDiv').classList;
+      if (PageOverlayClasses.contains('scanlines')) {
+         PageOverlayClasses.remove('scanlines');
+      }
+   }
+   
 
    var titlePieces = document.querySelectorAll('.title');
    var timer = 400;
