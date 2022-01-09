@@ -1,6 +1,3 @@
----
----
-
 
 @charset "UTF-8";
 
@@ -60,8 +57,18 @@ h1 {
 }
 
 
+.Across1 {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   align-items: baseline;
+   flex-wrap: wrap-reverse;
+   padding: 15px;
+}
 
-
+.legend {
+   color: #fd7f20;
+}
 
 .about_section {
    text-align: center;
@@ -195,6 +202,16 @@ hr {
     z-index:1000;
     overflow: scroll;
 }
+
+
+
+
+/*********************************************************************************/
+/*   Scanlines are ALL thanks to: https://codepen.io/meduzen/pen/zxbwRV          */
+/*********************************************************************************/
+
+
+
 
 
 /* REGULAR SCANLINES SETTINGS */
