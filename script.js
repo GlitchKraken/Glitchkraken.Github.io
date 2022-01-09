@@ -35,6 +35,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
    var userPreferenceCookie = document.cookie;
+   var userPreferenceCookie = String(userPreferenceCookie);
+   
    var userPreference = userPreferenceCookie.split('=')[1].split(';')[0];
    if (userPreference === 'OFF')
    {
