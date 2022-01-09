@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
    var userPreferenceCookie = document.cookie;
 
    // add this to test!
+   // another comment so the second cast is picked up. ugh, thanks git.
    var userPreference = String(String(userPreferenceCookie).split('=')[1]).split(';')[0];
    if (userPreference === 'OFF')
    {
