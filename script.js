@@ -31,7 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
    'use strict';
 
    
-   var userPreferenceCookie = document.cookie; var userPreference = userPreferenceCookie.split('=')[1].split(';')[0];
+   var userPreferenceCookie = document.cookie;
+   var userPreference = userPreferenceCookie.split('=')[1].split(';')[0];
    if (userPreference === 'OFF')
    {
       var PageOverlayClasses = document.getElementById('pageDiv').classList;
