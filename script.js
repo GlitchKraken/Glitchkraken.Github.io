@@ -30,13 +30,14 @@ document.addEventListener('DOMContentLoaded', function () {
    // alert(document.cookie)
    if (document.cookie === null) {
       document.cookie ='scanlinePreference=none;secure'; 
+      alert('created cookie!');
    }
 
 
 
    var userPreferenceCookie = document.cookie;
    var userPreferenceCookie = String(userPreferenceCookie);
-   
+
    var userPreference = userPreferenceCookie.split('=')[1].split(';')[0];
    if (userPreference === 'OFF')
    {
