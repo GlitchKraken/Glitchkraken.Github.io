@@ -21,16 +21,19 @@ var motdArray =  ['~ No Place Like 127.0.0.1 ~', 'A place with all your hacking 
 // set a cookie that records the user's preference of scanlines... or the lack thereof.
 
 
-// alert(document.cookie)
-if (document.cookie === null) {
-   document.cookie ='scanlinePreference=none;secure'; 
-}
 
 // basically, do everything ONCE in a function that is run when the page is loaded. no need for repeat shenanigans...
 document.addEventListener('DOMContentLoaded', function () {
    'use strict';
 
    
+   // alert(document.cookie)
+   if (document.cookie === null) {
+      document.cookie ='scanlinePreference=none;secure'; 
+   }
+
+
+
    var userPreferenceCookie = document.cookie;
    var userPreference = userPreferenceCookie.split('=')[1].split(';')[0];
    if (userPreference === 'OFF')
