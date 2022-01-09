@@ -47,6 +47,12 @@ document.addEventListener('DOMContentLoaded', function () {
       document.querySelector('.about_section').style.display = '';
    }, 2000);
 
-   document.querySelector('.motd').textContent = motdArray[(Math.floor(Math.random() * motdArray.length))];
+
+   var path = window.location.pathname;
+   var pagename = path.split("/").pop();
+   if (pagename === "index.html") {
+      document.querySelector('.motd').textContent = motdArray[(Math.floor(Math.random() * motdArray.length))];
+   }
+   
 
 }, false);
