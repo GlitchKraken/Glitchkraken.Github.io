@@ -23,6 +23,7 @@ body {
   color: #9370DB;
   overflow: scroll;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 fieldset {
