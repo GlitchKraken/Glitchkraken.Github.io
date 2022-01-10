@@ -80,7 +80,7 @@ Importing custom Alien Favicon, in multiple sizes so it looks pretty on differen
       <a href="https://discord.com/users/117086477732675593" class="link play" target="_blank"
         rel="noopener noreferrer"><button>Discord</button></a>
       |
-      <button onclick="var userPreferenceCookie = document.cookie; var userPreference = userPreferenceCookie.split('=')[1].split(';')[0]; if (userPreference === 'none') { document.cookie ='scanlinePreference=OFF;secure'; var PageOverlayClasses = document.getElementById('pageDiv').classList; if (PageOverlayClasses.contains('scanlines')) PageOverlayClasses.remove('scanlines'); } else { document.cookie ='scanlinePreference=none;secure'; var PageOverlayClasses = document.getElementById('pageDiv').classList; if (!PageOverlayClasses.contains('scanlines')) PageOverlayClasses.add('scanlines');}">[Toggle ScanLines]</button>
+      <button onclick="var userPreferenceCookie = document.cookie; var userPreference = String(String(userPreferenceCookie).split('=')[1]).split(';')[0]; if (userPreference === 'none') { document.cookie ='scanlinePreference=OFF;secure'; var PageOverlayClasses = document.getElementById('pageDiv').classList; if (PageOverlayClasses.contains('scanlines')) PageOverlayClasses.remove('scanlines'); } else { document.cookie ='scanlinePreference=none;secure'; var PageOverlayClasses = document.getElementById('pageDiv').classList; if (!PageOverlayClasses.contains('scanlines')) PageOverlayClasses.add('scanlines');}">[Toggle ScanLines]</button>
 
     </div>
 
