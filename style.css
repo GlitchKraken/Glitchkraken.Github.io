@@ -2,7 +2,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 @font-face {
@@ -133,6 +133,25 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.skills {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 10px;
+  list-style-type: none;
+  min-width: 150px;
+}
+
+.skills li:nth-child(odd) {
+  margin-top: 5px;
+  width: 60%;
+  float: left;
+}
+
+.skills li:nth-child(even) {
+  width: 40%;
+  float: right;
 }
 
 /*Specify the boxes that go IN the container! their sizes will mostly be determined by the container class :)*/

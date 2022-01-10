@@ -118,6 +118,26 @@ h1 {
 }
 
 
+.skills {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 10px;
+	list-style-type: none;
+	min-width: 150px;
+
+	li:nth-child(odd){
+		margin-top: 5px;
+		width: 60%;
+		float: left;
+	}
+
+	li:nth-child(even){
+		width: 40%;
+		float: right;
+	}
+}
+
+
 /*Specify the boxes that go IN the container! their sizes will mostly be determined by the container class :)*/
 
 /*thanks again to https://css-tricks.com/notched-boxes/    and Nickolas Gupton!   https://nickolas.gupton.xyz/   */
