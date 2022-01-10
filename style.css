@@ -255,7 +255,6 @@ hr {
   top: 0px;
   left: 0px;
   z-index: 1000;
-  overflow: scroll;
   overflow-x: hidden;
   overflow-y: hidden;
 }
