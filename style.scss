@@ -1,5 +1,4 @@
----
----
+
 
 @charset "UTF-8";
 
@@ -27,6 +26,8 @@ body {
    font-size: medium;
    color: 	#9370DB;
    overflow: scroll;
+   overflow-y: hidden;
+   overflow-x: hidden;
 }
 
 fieldset {
@@ -264,6 +265,8 @@ hr {
     left:0px;
     z-index:1000;
     overflow: scroll;
+    overflow-x: hidden;
+    overflow-y:  hidden;
 }
 
 
