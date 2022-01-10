@@ -1,10 +1,12 @@
-
+---
+---
 
 @charset "UTF-8";
 
 /* Fixing the box-sizing attribute will make sizing boxes easier. */
 html {
    box-sizing: border-box;
+   overflow-y: scroll;
 }
 
 
@@ -25,9 +27,8 @@ body {
    font-family: gohu;
    font-size: medium;
    color: 	#9370DB;
-   overflow: scroll;
    overflow-x: hidden;
-   overflow-y: scroll;
+   overflow-y: hidden;
 }
 
 fieldset {

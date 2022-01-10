@@ -2,6 +2,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-y: scroll;
 }
 
 @font-face {
@@ -21,9 +22,8 @@ body {
   font-family: gohu;
   font-size: medium;
   color: #9370DB;
-  overflow: scroll;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 fieldset {
