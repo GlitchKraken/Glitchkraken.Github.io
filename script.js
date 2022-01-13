@@ -14,7 +14,7 @@ var motdArray = ['~ No Place Like 127.0.0.1 ~', 'A place with all your hacking n
    'The right man in the wrong place can make all the difference in the world.',
    '-Our crime is that of curiosity-', 'Hack the planet!',
    'Information is power!', 'Everything can be hacked... and everyone~', 'A super secret hacking log on a super secret hacking blog!',
-   'We do what we must, because we can.',
+   'We do what we must, because we can.','S̴̖̫͔͓̒ḛ̷̛̆͑c̴̢̣̯̎͘͝r̴͈͍̺͌̽̈́e̶̗͓̋t̵͎͠s̸͎̀ ̴̢̫̥̍̋̊͆ͅL̴͓͗̉͝i̴͖̞͂ę̶͆̐̇ ̷̥͉̝͒D̸͎̏͝͝e̷̢̢̹̹͋͝e̷̯͑p̸͍͗̾͜͝͝ ̶̯̺̖̜́̃̋̆B̵͙̗̂̿ẻ̸̻͎̰̈́̽n̶͖͔̜̈́͑e̵͍̜̯̪̿̒̒͝a̷̙͎̟̠̽̃͂t̸̼̖͛͜ḧ̷̞̠̟',
    'Where\'s the fun in playing fair?'
 ]
 

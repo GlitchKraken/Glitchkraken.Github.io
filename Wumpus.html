@@ -41,7 +41,7 @@ DON'T CHANGE THIS FILE
 
 
   <body>
-<div class="container">
+    <div class="container">
     <h1>
       <pre>
   █████████▄   ▄█        ▄██████▄     ▄██████▄  
@@ -72,21 +72,51 @@ DON'T CHANGE THIS FILE
         rel="noopener noreferrer"><button>Discord</button></a>
       |
       <button onclick="var userPreferenceCookie = document.cookie; var userPreference = String(String(userPreferenceCookie).split('=')[1]).split(';')[0]; if (userPreference === 'none') { document.cookie ='scanlinePreference=OFF;secure'; var PageOverlayClasses = document.getElementById('pageDiv').classList; if (PageOverlayClasses.contains('scanlines')) PageOverlayClasses.remove('scanlines'); } else { document.cookie ='scanlinePreference=none;secure'; var PageOverlayClasses = document.getElementById('pageDiv').classList; if (!PageOverlayClasses.contains('scanlines')) PageOverlayClasses.add('scanlines');}">[Toggle ScanLines]</button>
+
     </div>
 
 
 
 
-    <div class="Across1">
-      <fieldset id="Projects">
-        <legend class = "legend">Georgia Tech Malware Project</legend>
-        <h2>Note:</h2>
-        <h3>Becuase this blog-section covers school-projects, much will be omitted.</h3>
-        <h3>I will do my absolute best to showcase lessons learned, While also hiding any potentially revealing information. After all, magic tricks are only fun because you aren't immediately given the answer, right?</h3>
+    <div class="row">
+      <div class="displayBox">
+        <h2>Hunt The Wumpus!</h2>
+        <h3 class="folder">2019 Spring Semester - Making a Game with AI Assist</h3>
+          This was probably one of my favorite school projects, by a long shot! This one is much easier to show off than it is 
+          to explain, so the text part of this blog section will probably be rather short.
+        <br><br>
+        The topic wasn't too simple: "Create an interactive webpage that keeps score, state, etc per-user... and also makes use of another project of yours."
+        For whatever reason, I took this as a challenge- and elected, of all things, to have my webpage make use of an AI I wrote for a game-theory/AI class.
+        <br><br>
+        The game's Name was "Hunt The Wumpus", and a simple version of its board-state is shown below.<br><br>
+        <img src="/blog/wumpus/WumpusLair.png" alt="The Wumpus Board" class ="ExamplePhoto">
+        <br><br>
+        The Game-Theory Idea of "Hunt The Wumpus" we implemented was a simple one. 
+        You start, safely, in the bottom left of the board, and want to grab the gold that has spawned randomly in one of the rooms given.
+        <br><br>
+        The trick is that, also randomly spawned, is 1 killable wumpus, and several pits- and you only get generic percepts 
+        to detect them- "you feel a breeze", "you smell a stinky wumpus nearby"-  you are given no direction for those percepts.
+        <br><br>
+        The hardest part, by a long shot, was getting the AI from C++ to Javascript with no weirdness happening. 
+        took a fair bit of learning JS "quirks!"
+        <br><br>
+        <img src="/blog/wumpus/WumpusAISneakPeak.png" alt="AI code" class ="ExamplePhoto">
+        <br><br>
+        The Basic Idea was to have the bot check its percepts at the beggining of each turn, while marking each room it went through.
+        "Safe/Unsafe/NewlySave", for example.
+        If any room was deemed too risky, it would pop off of a stack and revert its steps, reconsidering old rooms where necessary.
+        <br><br>
+        Since the other half was web-design, we had to allow the player some control over difficulty, and we decided that
+        toggling the AI, help-board, rules/hints was difficult enough! this was fairly easy to implement in JS through
+        <br><br>
+        <img src="/blog/wumpus/WumpusMainMenu.png" alt="The Main Menu" class ="ExamplePhoto">
+        <br><br>
+        <img src="/blog/wumpus/Toggles.png" alt="Toggleables" class ="ExamplePhoto">
 
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      </fieldset>
+        <h2> <a href="blog/wumpus/wumpus.html" style="text-decoration: none; color: #fd7f20;">Play The Game Here!</a></h2>
+
       
+    </div>
     </div>
     <a href="blog.html" class="link"><button><~[Back]</button></a>
 
