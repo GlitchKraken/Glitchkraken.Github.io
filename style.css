@@ -287,10 +287,10 @@ hr {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 85%;
+    width: 100%;
   }
   .container .col {
-    width: 85%;
+    width: 100%;
   }
   .container .ProfSelfie {
     width: 70%;
