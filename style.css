@@ -277,6 +277,27 @@ hr {
   overflow-y: hidden;
 }
 
+/*Handle Smaller Screen Sizes! ... or at least, attempt to...*/
+@media only screen and (max-width: 1024px) {
+  .container {
+    margin-left: 70px;
+  }
+  .container .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 85%;
+  }
+  .container .col {
+    width: 85%;
+  }
+  .container .ProfSelfie {
+    width: 70%;
+    height: 70%;
+  }
+}
+
 /*********************************************************************************/
 /*   Scanlines are ALL thanks to: https://codepen.io/meduzen/pen/zxbwRV          */
 /*********************************************************************************/

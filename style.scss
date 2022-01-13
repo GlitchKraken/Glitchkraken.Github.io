@@ -289,6 +289,32 @@ hr {
 
 
 
+/*Handle Smaller Screen Sizes! ... or at least, attempt to...*/
+@media only screen and (max-width: 1024px) {
+   .container {
+      margin-left: 70px;
+      
+      .row {
+         flex-direction: column;
+         width: 85%;
+      }
+
+      .col {
+         width: 85%;
+      }
+
+
+      
+      .ProfSelfie {
+      width: 70%;
+      height: 70%;
+   }
+
+   }
+}
+
+
+
 /*********************************************************************************/
 /*   Scanlines are ALL thanks to: https://codepen.io/meduzen/pen/zxbwRV          */
 /*********************************************************************************/
