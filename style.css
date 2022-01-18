@@ -32,6 +32,7 @@ fieldset {
   border-style: solid;
   border-width: 2px;
   float: left;
+  margin: 10px;
 }
 
 legend {
@@ -177,6 +178,12 @@ h1 {
   color: #00FF33;
 }
 
+.category {
+  color: #00FF33;
+  text-align: right;
+  float: right;
+}
+
 #secret {
   color: #0C0D10;
 }
@@ -239,7 +246,7 @@ hr {
   margin-bottom: 3%;
   border: 5px solid #8f00ff;
   border-radius: 5%;
-  width: 50%;
+  width: 61%;
   height: auto;
   padding: 5px;
 }
@@ -330,7 +337,7 @@ hr {
 
 .scanlines:before {
   width: 100%;
-  height: 5px;
+  height: 3px;
   z-index: 2147483649;
   background: rgba(0, 0, 0, 0.3);
   opacity: 0.75;
@@ -346,9 +353,9 @@ hr {
   z-index: 2147483648;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(51%, rgba(0, 0, 0, 0.3)));
   background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.3) 51%);
-  background-size: 100% 10px;
-  -webkit-animation: scanlines 1s steps(60) infinite;
-          animation: scanlines 1s steps(60) infinite;
+  background-size: 100% 6px;
+  -webkit-animation: scanlines 1s steps(30) infinite;
+          animation: scanlines 1s steps(30) infinite;
 }
 
 /* ANIMATE UNIQUE SCANLINE */
